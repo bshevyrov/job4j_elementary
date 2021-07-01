@@ -14,8 +14,8 @@ public class SortSelectedTest {
 
     @Test
     public  void whenSortFiveItems() {
-        int[] expected = {-1, 2, 234, 0, 4};
-        int[] in = {-1, 0, 2, 4, 234};
+        int[] expected = {-1, 0, 2, 4, 234};
+        int[] in = {-1, 2, 234, 0, 4};
         int[] result = SortSelected.sort(in);
         Assert.assertArrayEquals(expected, result);
     }
